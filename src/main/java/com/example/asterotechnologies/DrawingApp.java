@@ -18,6 +18,19 @@ import javafx.scene.shape.Shape;
 import javafx.stage.Stage;
 import java.util.UUID;
 
+
+//Future Improvements:
+// 1. Add additional shapes and drawing tools. This could be done by adding additional private classes to "DrawingApp".
+
+// 2. Add an undo/redo feature that would allow the user to revert to previous work without fully deleting a shape.
+// A new class, "ShapeHistory" could be created using Stack<> logic to "log" shapes, and the order which they were placed.
+// This class would need methods to go with it, "undoAction" and "redoAction" which would remove the most recent shape, and add back the most recent shape from the stack.
+
+// 3. Provide additional coloring manipulation, such as opacity of the shape.
+
+// 4. A method, "imageExport(File file)" could be added to save the project to a jpg, png, etc. This would also require a button being added within the application.
+
+
 /** JavaFX drawing application. Tools for creating rectangles and circles in different colors and the ability to delete selected shapes. */
 public class DrawingApp extends Application {
     private String activeTool = "";
